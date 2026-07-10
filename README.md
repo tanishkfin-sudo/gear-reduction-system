@@ -1,5 +1,5 @@
 # 2:1 Spur Gear Reduction System: Verification & Iterative Design
-**Mechanical Engineering Application Portfolio Project**
+
 
 ## Project Overview
 This work demonstrates the entire process of engineering design lifecycle of a 2:1 spur gear reduction system. The first design prototype (System V1) was created using Fusion 360, and then the stress analysis was done through a custom Python code of the Lewis Bending Stress Equation. After the structural risk of failure was found in the system under heavy loads, the next design (System V2) was created by optimizing the face width through parameterization.
