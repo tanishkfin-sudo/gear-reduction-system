@@ -2,7 +2,7 @@
 
 
 ## Project Overview
-This work demonstrates the entire process of engineering design lifecycle of a 2:1 spur gear reduction system that I designed. The first design prototype (System V1) was created using Fusion 360, and then the stress analysis was done through a custom Python code of the Lewis Bending Stress Equation. After the structural risk of failure was found in the system under heavy loads, the next design (System V2) was created by optimizing the face width through parameterization.
+In order to link CAD modeling with mechanical analysis, I designed a 2:1 spur gear reduction system with Fusion 360. In order to confirm that the structure is safe enough, I created a Python script based on Lewis Bending Stress Equation for validation of my ASTM A36 mild steel design. Although it passed easily at 5.0 Nm, at 40.0 Nm the stress safety factor was found too low with only 1.06 compared to the 140 MPa material limitation. Being aware of the structural risk, I iterated my design through engineering feedback loop by parameterizing and raising the face width from 15mm to 25mm. By executing my Python script again, I confirmed that my new version of System (V2) met the design parameters safely with the safety factor of 1.76.
 
 ---
 
