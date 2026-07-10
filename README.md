@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project is a 2:1 spur gear reduction system, designed in Fusion 360 and validated with a Python script. The goal was to go through a real design → calculate → find a problem → revise → verify process, not just produce a static CAD model.
+The project is a 2:1 spur gear reduction design in Fusion 360, which has been validated using a Python script. It aimed at undergoing an iterative process of designing, calculating, identifying the problem, revising, and verifying, rather than simply making a CAD design.
 
-The gears were modeled with correct meshing geometry, mounted on a base plate, and checked using a Python script that calculates gear ratio, output speed/torque, and gear tooth bending stress (via the Lewis Bending Equation). During validation, the original design (V1) failed a stress test at a higher input load. The design was revised (V2) by increasing the gear face width, and the fix was verified both mathematically (Python) and geometrically (Fusion's Interference Check tool).
+The gears were designed with the right geometry for meshing, placed on a base plate and were then analyzed using a Python script that analyzed their gear ratio, their output speed/torque, and bending stress in the teeth of the gears based on Lewis Bending Equation. While validating the design, the initial design (V1) had failed the stress test with higher input load. The design was then revised (V2) by increasing the face width of the gears.
 
 ---
 
