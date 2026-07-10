@@ -1,8 +1,42 @@
+# 2:1 Spur Gear Reduction System: Verification & Iterative Design
+**Mechanical Engineering Application Portfolio Project**
+
+## Project Overview
+This project presents the complete engineering design lifecycle of a functional **2:1 spur gear reduction system**. The initial design baseline (**System V1**) was physically modeled in Fusion 360, then structurally analyzed using a custom Python implementation of the **Lewis Bending Stress Equation**. Upon identifying a structural failure risk under heavy loading scenarios, an optimized iteration (**System V2**) was developed via parametric face-width modification to achieve compliance with conventional mechanical safety factors.
+
+---
+
+## 1. Mechanical Design Specifications
+The physical system relies on a perfectly matching center distance of $75.0 \text{ mm}$ with an integrated $0.1 \text{ mm}$ backlash setting to ensure friction reduction and smooth tooth engagement.
+
+| Parameter | Input Pinion (Weaker Link) | Output Gear |
+| :--- | :--- | :--- |
+| **Number of Teeth ($N$)** | 20 | 40 |
+| **Module ($m$)** | $2.5 \text{ mm}$ | $2.5 \text{ mm}$ |
+| **Pitch Diameter ($d$)** | $50.0 \text{ mm}$ | $100.0 \text{ mm}$ |
+| **Pressure Angle** | $20^\circ$ | $20^\circ$ |
+| **Material Base** | ASTM A36 Mild Steel | ASTM A36 Mild Steel |
+
+---
+
+## 2. Validation Testing & Simulation Summary
+The system's structural integrity was evaluated across three distinct operational test cases using our custom `gear_calc.py` validation script.
+
+| Test Phase | Config Version | Input Torque | Face Width | Safety Factor | Status / Engineering Verdict |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Run 1: Baseline** | System V1 | $5.0 \text{ Nm}$ | $15.0 \text{ mm}$ | **8.45** | **PASS** (Heavily over-engineered for light duty) |
+| **Run 2: Stress Test** | System V1 | $40.0 \text{ Nm}$ | $15.0 \text{ mm}$ | **1.06** | **CRITICAL FAIL** (Drops below $1.5$ minimum threshold) |
+| **Run 3: Optimization** | System V2 | $40.0 \text{ Nm}$ | $25.0 \text{ mm}$ | **1.76** | **PASS** (Geometry revised and verified structurally safe) |
+
+---
+
+## 3. Script Simulation Execution Logs (`results_log.txt`)
+The following comprehensive execution records capture the unedited input arrays, intermediate tangential forces, and ultimate mechanical safety factor calculations:
+
 ```text
 GEAR REDUCTION SYSTEM — VALIDATION RESULTS LOG
 2:1 Spur Gear Reduction System
 
- 
 These logs record three runs of the script that test the gear design and illustrate
 the design -> calculation -> problem -> revision -> verification cycle detailed in
 the project README.
@@ -104,5 +138,3 @@ SUMMARY
   Run 3 (V2, 40.0 Nm):   Safety Factor 1.76  -> PASS
 
 Assumed material: Mild steel (bending allowable ~140 MPa), commonly chosen as a cheap starting point material for a gear design.
-
-```
