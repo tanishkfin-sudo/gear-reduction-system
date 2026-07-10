@@ -138,3 +138,44 @@ SUMMARY
   Run 3 (V2, 40.0 Nm):   Safety Factor 1.76  -> PASS
 
 Assumed material: Mild steel (bending allowable ~140 MPa), commonly chosen as a cheap starting point material for a gear design.
+```
+## 4. Photos, Videos & CAD Files
+
+### First Gear Design (V1)
+This was our starting design. It had a narrower gear width (15mm) and couldn't handle the heavy 40 Nm load, dropping down to a dangerous 1.06 safety factor.
+
+* **Isometric View of the Gears:**
+![V1 Assembly Isometric](render_1_isometric.png)
+
+* **Top Down View of the Assembly:**
+![V1 Assembly Top Down](render_1_topdown_assembly.png)
+
+* **Close-up on the Gear Teeth:**
+![Pitch Engagement Close Up](render_2_teeth_closeup.png)
+
+---
+
+### Spinning Gear Tests (Videos)
+These clips show how the gears spin together inside Fusion 360. Turning the small gear twice turns the big gear exactly once.
+
+* [Click here to see the gears spin automatically](gear_rotation_v1_2.mp4)
+* [Click here to see the gears turned by hand](gear_rotation_v1_1.mp4)
+
+---
+
+### Fixed Gear Design (V2)
+To stop the gears from breaking under the heavy load, we widened the teeth to 25mm. This fixed the problem and brought the safety factor up to a safe 1.76.
+
+* **New Heavy Duty Design:**
+![V2 Heavy Duty Configuration](render_2_isometric.png)
+
+* **Baseplate Hole Locations:**
+![V2 Baseplate Mounting Clearances](render_3_baseplate_holes.png)
+
+---
+
+## 5. Original CAD File Downloads
+If anyone wants to download your actual 3D models to open them up on their computer, they can use these shortcuts:
+
+* [Download First Design - V1 (.f3z file)](Gear_Reduction_System_V1.f3z)
+* [Download Fixed Design - V2 (.f3z file)](Gear_Reduction_System_V2.f3z)
