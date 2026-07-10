@@ -27,7 +27,7 @@ The gears were designed with the right geometry for meshing, placed on a base pl
 
 ## 2. CAD Verification: Interference Check
 
-After assembling the gears with Revolute joints and a Motion Link (2:1 ratio, reversed rotation), a formal Interference Check was run in Fusion 360. The first attempt showed a real solid-to-solid collision (452.4 mm³) between the pinion and gear teeth, caused by the teeth being out of phase with each other. This was fixed by rotating the pinion's joint by -9°, after which the Interference Check returned "No interference detected" — confirming the gears mesh correctly with no clipping.
+Once the gears were assembled with the Revolute joints and a Motion Link (2:1 ratio, reverse direction), an official Interference Check was performed using Fusion 360. In the first trial, there was an actual solid-to-solid collision (452.4 mm³) due to the misalignment of the teeth of the gears. The problem was solved by changing the rotation of the joint of the pinion by -9°, upon which time the Interference Check returned “No interference detected.”
 
 ---
 
