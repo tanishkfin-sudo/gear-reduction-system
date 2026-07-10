@@ -1,3 +1,4 @@
+```text
 GEAR REDUCTION SYSTEM — VALIDATION RESULTS LOG
 2:1 Spur Gear Reduction System
 
@@ -103,3 +104,5 @@ SUMMARY
   Run 3 (V2, 40.0 Nm):   Safety Factor 1.76  -> PASS
 
 Assumed material: Mild steel (bending allowable ~140 MPa), commonly chosen as a cheap starting point material for a gear design.
+
+```
