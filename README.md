@@ -39,9 +39,9 @@ Once the gears were assembled with the Revolute joints and a Motion Link (2:1 ra
 | Run 2: Stress Test | V1 | 40.0 Nm | 15 mm | 1.06 | FAIL (below 1.5 threshold) |
 | Run 3: Revision | V2 | 40.0 Nm | 25 mm | 1.76 | PASS |
 
-**A note on input torque:** the 5.0 Nm and 40.0 Nm values were not measured from a physical motor — no hardware was built for this project. They were chosen to represent a light load and a deliberately heavier stress-test load, to demonstrate the calculation and design-revision process realistically.
+**Regarding the torque applied:** The figures of 5.0 Nm and 40.0 Nm were not derived using a physical motor because none was constructed for this experiment. The figures were selected arbitrarily in order to simulate a light load and an intentionally heavy stress test load respectively.
 
-**A note on material:** stress calculations assume mild steel with an allowable bending stress of ~140 MPa, used as a reasonable general reference value for a first-pass design. This is not tied to a specific certified material grade, since the gears were not manufactured or tested.
+**Regarding the materials:** the maximum allowable bending stress for the stress analysis is based on mild steel with an allowable bending stress of ~140 MPa. This figure is only a general value and not for any particular grade of material that can be certified.
 
 ---
 
